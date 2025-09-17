@@ -1,0 +1,27 @@
+[build-system]
+requires = ["scikit-build-core>=0.9", "pybind11>=2.11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "grmblinkpy"
+version = "0.1.0"
+description = "Python bindings for mblink using pybind11"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "Your Name", email = "you@example.com"}]
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: C++",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/grmblinkpy"
+
+[tool.scikit-build]
+# Put your CMake project at repository root (CMakeLists.txt is here)
+wheel.expand-macos-universal-tags = true  # nice-to-have for macOS
+
+# Optional: pass extra CMake args by env or here
+# cmake.args = ["-DUSE_SYSTEM_EIGEN=ON"]

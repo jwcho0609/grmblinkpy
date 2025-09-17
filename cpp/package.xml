@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>mblink</name>
+  <version>0.0.1</version>
+  <description>ROS 2 wrapper for the mblink library</description>
+  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>trusses_custom_interfaces</build_depend>
+  
+  <!-- <build_depend>pybind11</build_depend> -->
+
+  <!-- Dependencies needed at runtime -->
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>trusses_custom_interfaces</exec_depend>
+
+
+  <!-- <exec_depend>pybind11</exec_depend> -->
+
+  <!-- Export build type -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
