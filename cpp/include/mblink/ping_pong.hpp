@@ -1,6 +1,7 @@
 #ifndef PING_PONG_BUFFER_HPP
 #define PING_PONG_BUFFER_HPP
 
+#include <array>
 #include <vector>
 #include <mutex>
 #include <condition_variable>
